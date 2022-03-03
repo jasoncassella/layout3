@@ -116,11 +116,14 @@ main section {
 	flex-basis: 49%;
 }
 
+img {
+	width: 100%;
+}
+
 .imageContainer {
 	position: relative;
 	text-align: center;
 	color: white;
-	width: 50%;
 }
 .imageText {
 	position: absolute;
@@ -129,18 +132,11 @@ main section {
 	left: 10px;
 }
 
-section .imageContainer {
-	border: 1px solid pink;
-}
 main section + section {
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: 49%;
 	gap: 12px;
-}
-
-main img {
-	max-width: 100%;
 }
 
 .container {
@@ -151,8 +147,7 @@ main img {
 	width: 100%;
 }
 
-#heading h2,
-h3 {
+#heading h2 {
 	display: inline-block;
 }
 
@@ -162,9 +157,25 @@ h3 {
 
 main {
 	display: flex;
+	gap: 12px;
 }
 
 main > section {
 	width: 50vw;
-	border: 1px solid pink;
+}
+
+@media screen and (max-width: 1257px) {
+	main {
+		flex-direction: column;
+	}
+	main section + section {
+		flex-wrap: nowrap;
+		width: 93vw;
+		margin-left: 2%;
+	}
+	#mainImageContainer {
+		width: 93vw;
+		margin: 2%;
+		margin-bottom: 0;
+	}
 }
