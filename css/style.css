@@ -120,6 +120,7 @@ main section {
 	position: relative;
 	text-align: center;
 	color: white;
+	width: 50%;
 }
 .imageText {
 	position: absolute;
@@ -135,10 +136,11 @@ main section + section {
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: 49%;
+	gap: 12px;
 }
 
 main img {
-	width: 480px;
+	max-width: 100%;
 }
 
 .container {
