@@ -172,6 +172,7 @@ main > section {
 		flex-wrap: nowrap;
 		width: 93vw;
 		margin-left: 2%;
+		gap: 0;
 	}
 	#mainImageContainer {
 		width: 93vw;
